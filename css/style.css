@@ -1,0 +1,62 @@
+/*colores para la web:
+rosa oscuro #FF3D7F
+rosa claro #FF9E9D 
+verde oscuro #3FB8AF
+verde claro #7FC7AF 
+amarillo #DAD8A7*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/*.container-fluid{
+	padding: 0;
+	margin: 0;
+}*/
+/*.row,*{
+	margin: 0;
+	padding: 0;
+}*/
+footer{
+	background-color:#DAD8A7; 
+}
+i,.cursor{
+	cursor:pointer;
+}
+a:link{
+	color: black;
+    text-decoration: none;
+}
+a:visited{
+	color: black;
+    text-decoration: none;
+}
+a:hover {
+	color: black;
+    text-decoration: none;
+}
+.tipoTexto{
+	font-family: 'Lato', sans-serif;
+}
+.tipoTitulo{
+	font-family: 'Playfair Display', serif;
+}
+@media (max-width: 575px){
+
+}
+@media (min-width: 576px) and (max-width: 767px){
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+@media (max-width: 991px){
+
+}
+@media (min-width: 992px){
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+@media (min-width: 1200px){
+	
+
+}	

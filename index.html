@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html data-ng-app="portfolio" ng-controller="IndexCtrl">
+	<head>
+		<title ng-bind="title"></title>
+		<link rel="icon" ng-href="img/" type="image/x-icon">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/angular.js"></script>
+		<script src="js/angular-route.js"></script>
+		<script src="js/app.js"></script>
+		<script src="controllers/portfolio.js"></script>
+
+
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> -->
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+		<!-- <script>
+			var CMSSpace = CMSSpace || {};
+		</script> -->
+		<script>
+			$(document).ready(function () {
+					$(".reduceNav").click(function(event) {
+				$(".navReduced").collapse('hide');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-lg-light rounded">
+			<div class="container py-3 py-xl-0">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPortfolio" aria-controls="navbarPortfolio" aria-expanded="true" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="d-lg-none col-m-12 tipoTitulo"> 
+					
+				</div>
+					<div class="tipoTitulo"><h2>Andrea Sanchez Bondi</h2></div>
+				<div class="collapse navbar-collapse justify-content-md-center navReduced" id="navbarPortfolio">
+					<ul class="navbar-nav">
+						<li class="nav-item active my-auto reduceNav">
+							<a class="nav-link tipoTitulo" ng-href="#">
+							INICIO |
+							</a>
+						</li>
+						<li class="nav-item my-auto reduceNav">
+							<a class="nav-link tipoTitulo" ng-href="#portfolio">
+							PORTFOLIO |
+							</a>
+						</li>
+						<li class="nav-item my-auto reduceNav">
+							<a class="nav-link tipoTitulo" ng-href="#contacto">
+							CONTACTO |
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="h_divider hidemovil"></div>
+
+		<div class="row">
+			<div class="container col-sm-12 col-xl-8"> 
+				<div id="cargador" class="cargador" ng-show="cargador">
+					<img ng-src="img/loading.svg" class="preloader">
+				</div>
+
+				<div data-ng-view=""></div>
+			</div>
+		</div>
+
+		<footer class="mt-md-5 mt-2">
+			<div class="row">
+				<div class="h_divider_footer col-12"></div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-10 offset-md-1 my-4">&#169; 2018 by Andrea Bondi
+				
+				<div>
+					<a class=" no-padding" ng-href="mailto:yaibondi@gmail.com" target="_blank" title="Enviar correu"><i class="far fa-envelope fa-2x"></i></a>
+				</div>
+				<div>
+					<a ng-href="https://www.facebook.com/Andreabonditv/" target="_blank">
+						<i class="fab fa-facebook-square fa-2x "></i>
+					</a>
+				</div>
+				<div>
+					<a ng-href="https://www.instagram.com/andreabonditv/" target="_blank">
+					<i class="fab fa-instagram fa-2x"></i>
+					</a>
+				</div>
+				</div>	
+			</div>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+	</body>
+</html>
