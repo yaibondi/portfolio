@@ -6,7 +6,7 @@ angular.module('portfolio')
 
 			var deferred=$q.defer();
 			
-			$http.post("views/index.html", data,{
+			$http.post("index.html", data,{
 				headers:{
 					"Content-type":undefined
 				},
@@ -64,29 +64,6 @@ angular.module('portfolio')
 			.catch(function(error) {
 				$rootScope.cargador=false;
 
-			});
-
-})
-
-.controller('contactaCtrl',function($scope,$http,$rootScope,$q){
-		$rootScope.cargador=true;
-	var data = new FormData();
-				data.append("acc","l");
-
-			var deferred=$q.defer();
-			
-			$http.post("views/contacta.html", data,{
-				headers:{
-					"Content-type":undefined
-				},
-					transformRequest:angular.identity
-			})
-			.then(function(res){
-				deferred.resolve(res);
-					$rootScope.cargador=false;
-			})
-			.catch(function(error) {
-				$rootScope.cargador=false;
 			});
 
 })

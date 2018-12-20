@@ -15,14 +15,8 @@ app.config(['$routeProvider',function($routeProvider){
 	.when('/portfolio',{
 		templateUrl:'views/portfolio.html',
 		controller:'portfolioCtrl',
-		title: "portfolio"
+		title: "Portfolio"
 	})
-	.when('/contacto',{
-		templateUrl:'views/contacta.html',
-		controller:'contactaCtrl',
-		title: "Contacto"
-	})
-
 	.otherwise({
 		redirectTo:'/'
 	});
